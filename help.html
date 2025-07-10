@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>How You Can Help | The Iron Foundation</title>
+  <meta name="description" content="Learn how you can help raise awareness about hereditary hemochromatosis and save lives through blood donation.">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Maps API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECwx-GqGMRbKxZeo0cZAxBPczck-3LUk&libraries=geometry"></script>
+</head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">The&nbsp;Iron&nbsp;Foundation</a>
+             <ul class="nav-links" role="list">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="help.html" aria-current="page">Help</a></li>
+         <li><a href="support.html">Support</a></li>
+         <li><a href="get-tested.html">Get Tested</a></li>
+       </ul>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"
+              aria-haspopup="true" aria-controls="overlayMenu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay" id="overlayMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">×</button>
+         <nav class="overlay-nav" aria-label="Mobile">
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="help.html">How You Can Help</a>
+       <a href="support.html">Support Our Mission</a>
+       <a href="get-tested.html">Get Tested</a>
+     </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main" class="about-wrap">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>How You Can Help</h1>
+      <p class="lead">Help us turn hemochromatosis from a health problem into something that can save lives.</p>
+    </section>
+
+    <!-- Ways to Help Section -->
+    <section id="ways-to-help" aria-labelledby="ways-heading">
+      <h2 id="ways-heading">Ways to Make a Difference</h2>
+      <div class="about-grid">
+                 <article class="about-card">
+           <h3>Donate Blood</h3>
+           <p>If you have HH, your blood draws can save lives. Schedule regular donations at Red Cross centers instead of discarding your blood.</p>
+           <a href="#find-centers" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Find Centers</a>
+         </article>
+         <article class="about-card">
+           <h3>Spread Awareness</h3>
+           <p>Share information about HH symptoms and the importance of early detection. Every person you inform could prevent serious complications.</p>
+         </article>
+         <article class="about-card">
+           <h3>Get Tested</h3>
+           <p>If you have Northern European ancestry or HH symptoms, get a simple ferritin test. Early detection is key to preventing organ damage.</p>
+           <a href="get-tested.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+         </article>
+         <article class="about-card">
+           <h3>Partner with Us</h3>
+           <p>Organizations, healthcare providers, and sponsors can help us reach more people affected by HH.</p>
+         </article>
+      </div>
+    </section>
+
+
+
+        <!-- Awareness Actions Section -->
+    <section id="awareness-actions" aria-labelledby="awareness-heading">
+      <h2 id="awareness-heading">Spread Awareness</h2>
+      <div class="event-list">
+        <div class="event">
+          <span class="event-title">Social Media</span>
+          <span>Share our content and personal stories about HH on Facebook, Twitter, Instagram, and LinkedIn</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Healthcare Providers</span>
+          <span>Encourage your doctor to screen for HH, especially if you have Northern European ancestry</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Family & Friends</span>
+          <span>Inform relatives about HH genetics and symptoms - it often runs in families</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Workplace</span>
+          <span>Post our fact sheets at your workplace, campus, or community center</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Target High-Risk Groups</span>
+          <span>Focus on Irish, Scottish, Welsh, and Northern European communities</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Share Testing Resources</span>
+          <span>Tell others about available testing options including Amazon home test kits and professional lab services</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testing Information Section -->
+    <section id="testing-kits-help" aria-labelledby="testing-kits-heading">
+      <h2 id="testing-kits-heading">Help Others Get Tested</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <p>One of the best ways to help is encouraging others to get tested for hemochromatosis. There are multiple testing options available including Amazon home test kits and professional lab services like HealthyIron.</p>
+        
+        <div class="about-grid" style="margin-top: 2rem;">
+          <article class="about-card">
+            <h3>Share Testing Information</h3>
+            <p>Tell your family, friends, and community about testing options. Finding HH early saves lives and prevents complications.</p>
+            <a href="get-tested.html#testing-kits" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Get Testing Info</a>
+          </article>
+          <article class="about-card">
+            <h3>Support Testing Access</h3>
+            <p>Help fund testing for those who can't afford it. Your donation can provide screening for high-risk individuals through professional services.</p>
+            <a href="support.html#donate" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Support Testing</a>
+          </article>
+          <article class="about-card">
+            <h3>Organize Screening Events</h3>
+            <p>Partner with us to host community screening events and share information about testing options in your area.</p>
+            <a href="mailto:theironfoundation.org@gmail.com" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Contact Us</a>
+          </article>
+          <article class="about-card">
+            <h3>Educate Healthcare Providers</h3>
+            <p>Share information about testing options with doctors and healthcare providers to increase HH screening awareness.</p>
+            <a href="get-tested.html#testing-kits" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Get Resources</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Red Cross Locator Section -->
+    <section id="find-centers" class="redcross-locator-section">
+      <div class="locator-content">
+        <h2>Find Red Cross Blood Donation Centers</h2>
+        <p>Locate nearby Red Cross centers where you can donate blood and help save lives while managing your HH.</p>
+        <button id="showRedCrossMapBtn" class="btn-primary">
+          <span class="btn-text">Find Nearby Centers</span>
+        </button>
+        
+        <div id="redcross-map-loader" class="map-loader">
+          <div class="loader-spinner"></div>
+          <span>Finding your location and nearby centers...</span>
+        </div>
+        
+        <div id="redcross-map-container" class="map-container"></div>
+        <div id="redcross-map-error" class="map-error"></div>
+        
+        <div id="redcross-locations-list" class="locations-list"></div>
+      </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership" aria-labelledby="partnership-heading">
+      <h2 id="partnership-heading">Partner or Sponsor</h2>
+      <div class="about-grid">
+                 <article class="about-card">
+           <h3>Healthcare Organizations</h3>
+           <p>Partner with us to improve HH screening protocols and patient education in your medical practice or health system.</p>
+         </article>
+         <article class="about-card">
+           <h3>Corporate Sponsors</h3>
+           <p>Support our mission through sponsorship of awareness campaigns, educational materials, or screening programs.</p>
+         </article>
+         <article class="about-card">
+           <h3>Educational Institutions</h3>
+           <p>Collaborate on research projects, student education programs, or campus awareness initiatives.</p>
+         </article>
+         <article class="about-card">
+           <h3>Community Organizations</h3>
+           <p>Host educational events, screening drives, or awareness campaigns in your community.</p>
+         </article>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <p>Ready to make a difference? Contact us to discuss partnership opportunities.</p>
+        <a href="mailto:theironfoundation.org@gmail.com" class="btn-primary">
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="hero" style="background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%); color: white;">
+      <h2 style="color: white;">Start Making a Difference Today</h2>
+      <p class="lead" style="color: rgba(255, 255, 255, 0.9);">Everything you do helps get the word out about hemochromatosis and can save lives.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="get-tested.html" class="btn-primary" style="background: white; color: var(--primary-red);">
+          Get Tested
+        </a>
+        <a href="#find-centers" class="btn-primary" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">
+          Find Donation Centers
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> The Iron Foundation | 
+       <a href="index.html">Home</a> | 
+       <a href="about.html">About</a> | 
+       <a href="get-tested.html">Get Tested</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

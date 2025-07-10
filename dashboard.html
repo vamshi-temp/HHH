@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Impact Dashboard | Rewrite the Curse</title>
+  <meta name="description" content="Track our real-time impact: donations pledged, awareness events, and lives saved through hemochromatosis awareness.">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">The&nbsp;Iron&nbsp;Foundation</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="get-tested.html">Get Tested</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"
+              aria-haspopup="true" aria-controls="overlayMenu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay" id="overlayMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">×</button>
+    <nav class="overlay-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="get-tested.html">Get Tested</a>
+      <a href="help.html">How You Can Help</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Our Real-Time Impact</h1>
+      <p class="lead">Track how we're transforming hemochromatosis awareness into lifesaving action.</p>
+      <div class="last-updated">
+        <span id="lastUpdated">Last updated: Just now</span>
+      </div>
+    </section>
+
+    <!-- Key Metrics Dashboard -->
+    <section class="dashboard-metrics">
+      <div class="metrics-grid">
+        <div class="metric-card primary">
+          <div class="metric-icon">🩸</div>
+          <div class="metric-content">
+            <h3>Blood Donations</h3>
+            <div class="metric-value" id="donationsCount">0</div>
+            <div class="metric-label">Units pledged</div>
+            <div class="metric-change positive">+12 this week</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">👥</div>
+          <div class="metric-content">
+            <h3>People Tested</h3>
+            <div class="metric-value" id="testedCount">0</div>
+            <div class="metric-label">Self-reported</div>
+            <div class="metric-change positive">+5 this week</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">🎯</div>
+          <div class="metric-content">
+            <h3>Events Hosted</h3>
+            <div class="metric-value" id="eventsCount">0</div>
+            <div class="metric-label">Awareness events</div>
+            <div class="metric-change positive">+2 this month</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">💡</div>
+          <div class="metric-content">
+            <h3>Lives Impacted</h3>
+            <div class="metric-value" id="impactedCount">0</div>
+            <div class="metric-label">Estimated reach</div>
+            <div class="metric-change positive">+150 this month</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress Tracking -->
+    <section class="progress-section">
+      <h2>Monthly Goals Progress</h2>
+      <div class="progress-grid">
+        <div class="progress-card">
+          <h3>Blood Donations Goal</h3>
+          <div class="progress-bar">
+            <div class="progress-fill" id="donationsProgress" style="width: 0%"></div>
+          </div>
+          <div class="progress-stats">
+            <span id="donationsCurrent">0</span> / <span id="donationsGoal">100</span> units
+          </div>
+        </div>
+
+        <div class="progress-card">
+          <h3>Awareness Events Goal</h3>
+          <div class="progress-bar">
+            <div class="progress-fill" id="eventsProgress" style="width: 0%"></div>
+          </div>
+          <div class="progress-stats">
+            <span id="eventsCurrent">0</span> / <span id="eventsGoal">10</span> events
+          </div>
+        </div>
+
+        <div class="progress-card">
+          <h3>Testing Campaign Goal</h3>
+          <div class="progress-bar">
+            <div class="progress-fill" id="testingProgress" style="width: 0%"></div>
+          </div>
+          <div class="progress-stats">
+            <span id="testingCurrent">0</span> / <span id="testingGoal">50</span> people tested
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Activity Feed -->
+    <section class="activity-section">
+      <h2>Recent Activity</h2>
+      <div class="activity-feed" id="activityFeed">
+        <!-- Activity items will be populated by JavaScript -->
+      </div>
+      <button class="btn-primary" onclick="loadMoreActivity()">Load More Activity</button>
+    </section>
+
+    <!-- Geographic Impact -->
+    <section class="map-section">
+      <h2>Geographic Impact</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <div class="map-content">
+            <h3>Interactive Impact Map</h3>
+            <p>Coming soon: See where our awareness campaigns and donations are making the biggest difference.</p>
+            <div class="map-stats">
+              <div class="map-stat">
+                <span class="stat-number">15</span>
+                <span class="stat-label">States</span>
+              </div>
+              <div class="map-stat">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Cities</span>
+              </div>
+              <div class="map-stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Countries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section class="stories-section">
+      <h2>Impact Stories</h2>
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="story-avatar">👨‍⚕️</div>
+          <div class="story-content">
+            <h3>Dr. Sarah's Story</h3>
+            <p>"After learning about HH through your campaign, I tested positive and started treatment. My energy levels have improved dramatically."</p>
+            <div class="story-meta">
+              <span class="story-location">Boston, MA</span>
+              <span class="story-date">2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div class="story-avatar">🏃‍♀️</div>
+          <div class="story-content">
+            <h3>Maria's Journey</h3>
+            <p>"The assessment quiz led me to get tested. Now I donate blood regularly and feel better than I have in years."</p>
+            <div class="story-meta">
+              <span class="story-location">Austin, TX</span>
+              <span class="story-date">1 month ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div class="story-avatar">👨‍👩‍👧‍👦</div>
+          <div class="story-content">
+            <h3>Family Screening</h3>
+            <p>"When my brother was diagnosed, we all got tested. Three of us had it! Early detection saved us from serious complications."</p>
+            <div class="story-meta">
+              <span class="story-location">Chicago, IL</span>
+              <span class="story-date">3 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <h2>Join Our Mission</h2>
+      <p>Help us reach more people and save more lives through early detection and treatment.</p>
+      <div class="cta-buttons">
+        <a href="get-tested.html" class="btn-primary">Take the Assessment</a>
+        <a href="help.html" class="btn-primary">Find a Blood Drive</a>
+        <a href="index.html#donate" class="btn-primary">Make a Donation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Rewrite the Curse | <a href="#hero-heading">Back to top</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Dashboard data simulation
+    let dashboardData = {
+      donations: 47,
+      tested: 23,
+      events: 8,
+      impacted: 1250,
+      goals: {
+        donations: 100,
+        events: 10,
+        testing: 50
+      }
+    };
+
+    // Update metrics with animation
+    function animateCounter(element, target, duration = 2000) {
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.textContent = Math.floor(current).toLocaleString();
+      }, 16);
+    }
+
+    // Update progress bars
+    function updateProgress(element, current, goal) {
+      const percentage = Math.min((current / goal) * 100, 100);
+      element.style.width = percentage + '%';
+    }
+
+    // Initialize dashboard
+    function initDashboard() {
+      // Animate counters
+      animateCounter(document.getElementById('donationsCount'), dashboardData.donations);
+      animateCounter(document.getElementById('testedCount'), dashboardData.tested);
+      animateCounter(document.getElementById('eventsCount'), dashboardData.events);
+      animateCounter(document.getElementById('impactedCount'), dashboardData.impacted);
+
+      // Update progress bars
+      updateProgress(document.getElementById('donationsProgress'), dashboardData.donations, dashboardData.goals.donations);
+      updateProgress(document.getElementById('eventsProgress'), dashboardData.events, dashboardData.goals.events);
+      updateProgress(document.getElementById('testingProgress'), dashboardData.tested, dashboardData.goals.testing);
+
+      // Update progress stats
+      document.getElementById('donationsCurrent').textContent = dashboardData.donations;
+      document.getElementById('eventsCurrent').textContent = dashboardData.events;
+      document.getElementById('testingCurrent').textContent = dashboardData.tested;
+    }
+
+    // Activity feed data
+    const activities = [
+      { type: 'donation', message: 'New blood donation pledged', time: '2 minutes ago', location: 'San Francisco, CA' },
+      { type: 'test', message: 'Someone completed the assessment quiz', time: '5 minutes ago', location: 'Austin, TX' },
+      { type: 'event', message: 'Awareness event scheduled', time: '1 hour ago', location: 'Chicago, IL' },
+      { type: 'donation', message: 'Blood drive completed', time: '2 hours ago', location: 'Boston, MA' },
+      { type: 'test', message: 'Positive diagnosis reported', time: '3 hours ago', location: 'Seattle, WA' },
+      { type: 'event', message: 'Educational webinar hosted', time: '1 day ago', location: 'Online' }
+    ];
+
+    // Populate activity feed
+    function populateActivityFeed() {
+      const feed = document.getElementById('activityFeed');
+      activities.forEach(activity => {
+        const activityItem = document.createElement('div');
+        activityItem.className = 'activity-item';
+        activityItem.innerHTML = `
+          <div class="activity-icon ${activity.type}">${getActivityIcon(activity.type)}</div>
+          <div class="activity-content">
+            <p>${activity.message}</p>
+            <div class="activity-meta">
+              <span class="activity-time">${activity.time}</span>
+              <span class="activity-location">${activity.location}</span>
+            </div>
+          </div>
+        `;
+        feed.appendChild(activityItem);
+      });
+    }
+
+    function getActivityIcon(type) {
+      const icons = {
+        donation: '🩸',
+        test: '🔬',
+        event: '🎯'
+      };
+      return icons[type] || '📊';
+    }
+
+    // Update last updated time
+    function updateLastUpdated() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      document.getElementById('lastUpdated').textContent = `Last updated: ${timeString}`;
+    }
+
+    // Initialize everything when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      initDashboard();
+      populateActivityFeed();
+      updateLastUpdated();
+      
+      // Update every 30 seconds
+      setInterval(updateLastUpdated, 30000);
+    });
+
+    // Load more activity (placeholder)
+    function loadMoreActivity() {
+      // This would typically load more data from an API
+      alert('Loading more activity... (This would connect to a real API in production)');
+    }
+  </script>
+</body>
+</html> 

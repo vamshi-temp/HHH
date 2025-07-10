@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>About Us | The Iron Foundation</title>
+  <meta name="description" content="Learn about The Iron Foundation's mission to raise awareness about hereditary hemochromatosis and promote blood donation to save lives.">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">The&nbsp;Iron&nbsp;Foundation</a>
+             <ul class="nav-links" role="list">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html" aria-current="page">About</a></li>
+         <li><a href="help.html">Help</a></li>
+         <li><a href="support.html">Support</a></li>
+         <li><a href="get-tested.html">Get Tested</a></li>
+       </ul>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"
+              aria-haspopup="true" aria-controls="overlayMenu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay" id="overlayMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">×</button>
+         <nav class="overlay-nav" aria-label="Mobile">
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="help.html">How You Can Help</a>
+       <a href="support.html">Support Our Mission</a>
+       <a href="get-tested.html">Get Tested</a>
+     </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main" class="about-wrap">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <img src="images/logobanner.png" alt="The Iron Foundation Logo" style="max-width: 100%; height: auto; max-height: 200px;" />
+      </div>
+      <h1>About The Iron Foundation</h1>
+      <p class="lead">Transforming hereditary hemochromatosis from a curse into a cure, one donation at a time.</p>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Our Mission</h2>
+      <div class="about-grid">
+                 <article class="about-card">
+           <h3>Awareness</h3>
+           <p>Teaching people about hemochromatosis symptoms and getting tested early with simple blood work.</p>
+         </article>
+         <article class="about-card">
+           <h3>Connection</h3>
+           <p>Connecting HH patients with Red Cross donation centers where their blood draws can save lives instead of being discarded.</p>
+         </article>
+         <article class="about-card">
+           <h3>Empowerment</h3>
+           <p>Helping people with iron overload see how their condition can actually help others who need blood.</p>
+         </article>
+         <article class="about-card">
+           <h3>Research</h3>
+           <p>Supporting research and advocacy to help doctors diagnose HH better and improve care for patients.</p>
+         </article>
+      </div>
+    </section>
+
+    <!-- Origin Story Section -->
+    <section id="origin" aria-labelledby="origin-heading">
+      <h2 id="origin-heading">Our Origin Story</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <p>The Iron Foundation was built on a simple, but urgent mission: to raise awareness about <span class="text-red font-bold">Hemochromatosis</span> and bring to attention the ease of <span class="text-red font-bold">donation</span> through the <span class="text-red font-bold">Red Cross</span>.</p>
+        
+        <p>Inspired by the potential to save lives, we urge you to <span class="text-red font-bold">donate</span> your <span class="text-red font-bold">therapeutic blood</span> which is gold to others. Through <span class="text-red font-bold">early detection</span> and <span class="text-red font-bold">treatment</span>, our initiative combines storytelling, education, and action through one powerful movement.</p>
+        
+        <p>What started as a personal journey with hereditary hemochromatosis has grown into a movement that transforms individual health challenges into collective healing power.</p>
+      </div>
+    </section>
+
+    <!-- Milestones Section -->
+    <section id="milestones" aria-labelledby="milestones-heading">
+      <h2 id="milestones-heading">Key Milestones</h2>
+      <div class="event-list">
+         <div class="event">
+           <span class="event-title">Add milestones here</span>
+           <span>Add milestones here</span>
+         </div>
+         <div class="event">
+           <span class="event-title">Add milestones here</span>
+           <span>Add milestones here</span>
+         </div>
+         <div class="event">
+           <span class="event-title">Add milestones here</span>
+           <span>Add milestones here</span>
+         </div>
+         <div class="event">
+           <span class="event-title">Add milestones here</span>
+           <span>Add milestones here</span>
+         </div>
+         <div class="event">
+           <span class="event-title">Add milestones here</span>
+           <span>Add milestones here</span>
+         </div>
+      </div>
+    </section>
+
+    <!-- Future Plans Section -->
+    <section id="future" aria-labelledby="future-heading">
+      <h2 id="future-heading">What's Next</h2>
+      <div class="about-grid">
+                 <article class="about-card">
+           <h3>Self-Assessment Quiz</h3>
+           <p>Integrate a "Could I Have HH?" self-assessment quiz to help people identify potential symptoms and risk factors.</p>
+         </article>
+         <article class="about-card">
+           <h3>Donation Tracker</h3>
+           <p>Launch an interactive donation tracker tied to local Red Cross centers to gamify the donation experience.</p>
+         </article>
+         <article class="about-card">
+           <h3>Global Outreach</h3>
+           <p>Expand outreach with translated content and regional campaigns targeting high-risk populations worldwide.</p>
+         </article>
+         <article class="about-card">
+           <h3>Medical Partnerships</h3>
+           <p>Build partnerships with healthcare providers to improve HH screening and diagnosis rates.</p>
+         </article>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="hero" style="background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%); color: white;">
+      <h2 style="color: white;">Join Our Mission</h2>
+      <p class="lead" style="color: rgba(255, 255, 255, 0.9);">Ready to turn your iron overload into a lifesaving force?</p>
+      <a href="help.html" class="btn-primary" style="background: white; color: var(--primary-red);">
+        Learn How to Help
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> The Iron Foundation | 
+       <a href="index.html">Home</a> | 
+       <a href="help.html">Help</a> | 
+       <a href="get-tested.html">Get Tested</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard-api.js
+
+# Sitemap
+Sitemap: https://ironfoundation.org/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1 

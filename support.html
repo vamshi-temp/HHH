@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Support Our Mission | The Iron Foundation</title>
+  <meta name="description" content="Support The Iron Foundation's mission to raise awareness about hereditary hemochromatosis through donations, volunteering, and advocacy.">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://donorbox.org">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">The&nbsp;Iron&nbsp;Foundation</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="support.html" aria-current="page">Support</a></li>
+        <li><a href="get-tested.html">Get Tested</a></li>
+      </ul>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"
+              aria-haspopup="true" aria-controls="overlayMenu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay" id="overlayMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">×</button>
+    <nav class="overlay-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">How You Can Help</a>
+      <a href="support.html">Support Our Mission</a>
+      <a href="get-tested.html">Get Tested</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main" class="about-wrap">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Support Our Mission</h1>
+      <p class="lead">Help us get the word out about HH, support people affected by it, and save lives through education.</p>
+    </section>
+
+    <!-- Support Options Section -->
+    <section id="support-options" aria-labelledby="support-heading">
+      <h2 id="support-heading">Ways to Support</h2>
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Financial Donations</h3>
+          <p>Support our educational programs and outreach efforts. Every dollar helps us reach more people who need to know about hemochromatosis.</p>
+          <a href="#donate" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Donate Now</a>
+        </article>
+        <article class="about-card">
+          <h3>Volunteer</h3>
+          <p>Join our team of volunteers helping to spread awareness and support others with HH. Share your story, help with events, or assist with outreach.</p>
+          <a href="help.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Get Involved</a>
+        </article>
+        <article class="about-card">
+          <h3>Advocate</h3>
+          <p>Help us advocate for better HH screening, diagnosis, and treatment options. Contact legislators, healthcare providers, and community leaders.</p>
+          <a href="about.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+        </article>
+        <article class="about-card">
+          <h3>Corporate Partnerships</h3>
+          <p>Partner with us to sponsor awareness campaigns, educational materials, or screening programs in your community or workplace.</p>
+          <a href="mailto:info@theironFoundation.org" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Contact Us</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" aria-labelledby="impact-heading">
+      <h2 id="impact-heading">Your Impact</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <p>When you support The Iron Foundation, you're helping create a future where people get diagnosed with hemochromatosis early, get proper treatment, and can turn their condition into something that helps others.</p>
+        
+        <div class="about-grid" style="margin-top: 2rem;">
+          <div>
+            <h3 class="text-red">Education & Awareness</h3>
+            <ul class="bullet">
+              <li>Create educational materials and resources</li>
+              <li>Fund awareness campaigns for high-risk groups</li>
+              <li>Start screening programs in communities</li>
+              <li>Support research for better diagnostic tools</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-red">Community Support</h3>
+            <ul class="bullet">
+              <li>Connect HH patients with donation centers</li>
+              <li>Provide support groups and resources</li>
+              <li>Push for better healthcare policies</li>
+              <li>Help families understand genetic risks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" aria-labelledby="donate-heading">
+      <h2 id="donate-heading">Make a Financial Donation</h2>
+      <p class="lead">Your financial support helps us reach more people who need to know about hemochromatosis.</p>
+      
+      <!-- Donation Form -->
+      <div class="donorbox-wrap">
+        <script src="https://donorbox.org/widget.js" defer></script>
+        <iframe src="https://donorbox.org/embed/iron-foundation-support"
+                title="Secure donation form"
+                frameborder="0" 
+                scrolling="no"
+                height="900" 
+                width="100%" 
+                loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Other Ways to Help Section -->
+    <section id="other-ways" aria-labelledby="other-ways-heading">
+      <h2 id="other-ways-heading">Other Ways to Help</h2>
+      <div class="event-list">
+        <div class="event">
+          <span class="event-title">Monthly Giving</span>
+          <span>Set up recurring donations to provide steady support for our ongoing programs and initiatives</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Memorial Donations</span>
+          <span>Honor a loved one affected by HH with a memorial donation to support our mission</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Corporate Matching</span>
+          <span>Check if your employer offers donation matching programs to double your impact</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Fundraising Events</span>
+          <span>Host a fundraising event in your community to raise awareness and support</span>
+        </div>
+        <div class="event">
+          <span class="event-title">Legacy Giving</span>
+          <span>Include The Iron Foundation in your estate planning to support future generations</span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Call to Action -->
+    <section id="cta" class="hero" style="background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%); color: white;">
+      <h2 style="color: white;">Ready to Make a Difference?</h2>
+      <p class="lead" style="color: rgba(255, 255, 255, 0.9);">Help us turn hemochromatosis from a health problem into something that can save lives.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#donate" class="btn-primary" style="background: white; color: var(--primary-red);">
+          Donate Now
+        </a>
+        <a href="help.html" class="btn-primary" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">
+          Volunteer
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> The Iron Foundation | 
+       <a href="index.html">Home</a> | 
+       <a href="about.html">About</a> | 
+       <a href="help.html">Help</a> | 
+       <a href="get-tested.html">Get Tested</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html> 

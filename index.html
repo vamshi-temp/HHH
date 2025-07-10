@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Donate the Cure | Rewrite the Curse</title>
+  <meta name="description" content="Transform hereditary hemochromatosis into a lifesaving force. Learn about HH, find treatment, and donate to save lives.">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://www.youtube.com">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECwx-GqGMRbKxZeo0cZAxBPczck-3LUk&libraries=geometry"></script>
+  
+
+  
+  </head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="#" class="logo">The&nbsp;Iron&nbsp;Foundation</a>
+      <ul class="nav-links" role="list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="get-tested.html">Get Tested</a></li>
+      </ul>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"
+              aria-haspopup="true" aria-controls="overlayMenu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay" id="overlayMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">×</button>
+    <nav class="overlay-nav" aria-label="Mobile">
+      <a href="about.html">About</a>
+      <a href="help.html">How You Can Help</a>
+      <a href="support.html">Support Our Mission</a>
+      <a href="get-tested.html">Get Tested</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h2>Find Answers and Restore Health</h2>
+        <p>
+          <strong>Help for Hemochromatosis and Iron Overload</strong><br>
+          From Advocates and Experts Who Understand
+        </p>
+        <a href="get-tested.html" class="cta-button">Get Tested</a>
+      </div>
+    </section>
+
+    <!-- Main Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Donate the Cure, Rewrite the Curse.</h1>
+      <p class="lead">Transform hereditary hemochromatosis into a lifesaving force.</p>
+      <button class="btn-primary" onclick="document.getElementById('donate').scrollIntoView({behavior:'smooth'})">
+        Donate Now
+      </button>
+    </section>
+
+    <!-- Why Donate Your Blood Section -->
+    <section id="donation-benefits" aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">Why Donate Your Blood?</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
+          <div>
+            <h3 class="text-red">For You:</h3>
+            <ul class="bullet">
+              <li>Required therapeutic treatment for HH</li>
+              <li>Reduces iron overload safely</li>
+              <li>Prevents organ damage</li>
+              <li>Improves energy and wellbeing</li>
+              <li>Regular health monitoring</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-red">For Others:</h3>
+            <ul class="bullet">
+              <li>Saves up to 3 lives per donation</li>
+              <li>Helps accident victims</li>
+              <li>Supports surgery patients</li>
+              <li>Assists cancer patients</li>
+              <li>Aids mothers during childbirth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn" aria-labelledby="learn-heading">
+      <h2 id="learn-heading">What is Hemochromatosis?</h2>
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Iron Overload 101</h3>
+          <p>HH causes excessive iron absorption.</p>
+        </article>
+        <article class="about-card">
+          <h3>Who's at Risk?</h3>
+          <p>Common in Irish/North-European ancestry but can affect anyone.</p>
+        </article>
+        <article class="about-card">
+          <h3>Symptoms</h3>
+          <p>Fatigue, joint pain, liver issues, diabetes.</p>
+        </article>
+        <article class="about-card">
+          <h3>Treatment</h3>
+          <p>Simple blood tests + regular donation keep iron balanced.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Impact Dashboard Section -->
+    <section id="impact" aria-labelledby="impact-heading">
+      <h2 id="impact-heading">Your Impact Dashboard</h2>
+      <iframe class="dashboard-embed"
+              src="https://dashboard.placeholder.com"
+              title="Real-time impact dashboard"
+              loading="lazy"></iframe>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" aria-labelledby="stories-heading">
+      <h2 id="stories-heading">Real Stories</h2>
+      <div class="video-grid">
+        <iframe data-src="https://www.youtube.com/embed/y5h4DnYxFRc" 
+                title="Story 1" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <iframe data-src="https://www.youtube.com/embed/BXkm6h6uq0k" 
+                title="Story 2" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <iframe data-src="https://www.youtube.com/embed/NCtzkaL2t_Y" 
+                title="Story 3" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" aria-labelledby="events-heading">
+      <h2 id="events-heading">Meet & Greets + Events</h2>
+      <ul class="event-list" role="list">
+        <li class="event">
+          <span class="event-title">Kick-off blood drive</span>
+          <time datetime="2025-06-12">Jun 12 2025 – 10 AM</time>
+        </li>
+        <li class="event">
+          <span class="event-title">Ask-a-Hematologist AMA</span>
+          <time datetime="2025-07-12T15:00-05:00">Jul 12 2025 – 3 PM EST</time>
+        </li>
+        <li class="event">
+          <span class="event-title">HH Lightning Talk</span>
+          <time datetime="2025-08-18">Aug 18 2025 – Chicago</time>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Red Cross Locator Feature -->
+    <section id="donate" class="redcross-locator-section">
+      <div class="locator-content">
+        <h2>Find Red Cross Blood Donation Centers</h2>
+        <p class="lead">Turn your regular blood draws into donations that can save lives. Find Red Cross centers near you where you can donate while managing your HH.</p>
+        
+        <div class="about-grid" style="margin-bottom: 2rem;">
+                     <article class="about-card">
+             <h3>Therapeutic Donation</h3>
+             <p>The blood you need to have drawn anyway can help save someone else's life.</p>
+           </article>
+           <article class="about-card">
+             <h3>Professional Care</h3>
+             <p>Red Cross centers provide safe, professional blood donation services with trained medical staff.</p>
+           </article>
+           <article class="about-card">
+             <h3>Convenient Locations</h3>
+             <p>Find centers near you across the country, with locations in major cities and communities nationwide.</p>
+           </article>
+           <article class="about-card">
+             <h3>Health Benefits</h3>
+             <p>Regular donations help maintain healthy iron levels while contributing to community health.</p>
+           </article>
+        </div>
+        
+        <button id="showRedCrossMapBtn" class="btn-primary">
+          <span class="btn-text">Find Nearby Centers</span>
+        </button>
+        
+        <div id="redcross-map-loader" class="map-loader">
+          <div class="loader-spinner"></div>
+          <span>Finding your location and nearby centers...</span>
+        </div>
+        
+        <div id="redcross-map-container" class="map-container"></div>
+        <div id="redcross-map-error" class="map-error"></div>
+        
+        <div id="redcross-locations-list" class="locations-list"></div>
+      </div>
+    </section>
+
+        <!-- Donation Section -->
+    <section id="support" aria-labelledby="support-heading">
+      <h2 id="support-heading">Donate & Save Lives</h2>
+      <p class="lead">Help us get the word out about hemochromatosis and connect people with the testing and treatment they need.</p>
+      
+      <!-- Donation Options -->
+      <div class="donation-options">
+        <div class="about-grid" style="max-width: 800px;">
+          <article class="about-card">
+            <h3>One-Time Donation</h3>
+            <p>Make a one-time donation to help us reach more people who need to know about hemochromatosis.</p>
+            <div style="margin-top: 1.5rem;">
+              <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              </form>
+            </div>
+          </article>
+          <article class="about-card">
+            <h3>Monthly Giving</h3>
+            <p>Set up monthly donations to help us keep spreading awareness and supporting people who need testing.</p>
+            <div style="margin-top: 1.5rem;">
+              <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="YOUR_MONTHLY_PAYPAL_BUTTON_ID" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Subscribe with PayPal button" />
+              </form>
+            </div>
+          </article>
+        </div>
+        
+
+         
+         <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); border-radius: var(--radius-xl); color: white;">
+           <h3 style="color: white; margin-bottom: 1rem;">Support Red Cross Blood Services</h3>
+           <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem;">
+             Donate directly to the American Red Cross to support the blood donation centers that HH patients use.
+           </p>
+           <a href="https://www.redcross.org/donate/donation.html/" class="btn-primary" style="background: white; color: var(--primary-red); margin-right: 1rem;">
+             Donate to Red Cross
+           </a>
+           <a href="https://www.redcross.org/give-blood" class="btn-primary" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">
+             Find Blood Drives
+           </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Rewrite the Curse | <a href="#hero-heading">Back to top</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+
+</body>
+</html>

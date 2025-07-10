@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Get Tested for Hemochromatosis | Rewrite the Curse</title>
+  <meta name="description" content="Take our quick assessment to see if you might have hemochromatosis. Learn about symptoms, risk factors, and how to get tested.">
+  
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">The&nbsp;Iron&nbsp;Foundation</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="get-tested.html" aria-current="page">Get Tested</a></li>
+      </ul>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"
+              aria-haspopup="true" aria-controls="overlayMenu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay" id="overlayMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">×</button>
+    <nav class="overlay-nav" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">How You Can Help</a>
+      <a href="support.html">Support Our Mission</a>
+      <a href="get-tested.html">Get Tested</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Could You Have Hemochromatosis?</h1>
+      <p class="lead">Take our 2-minute assessment to see if you should get tested for iron overload.</p>
+      <button class="btn-primary" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">
+        Start Assessment
+      </button>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section class="facts-section">
+      <h2>Why Get Tested?</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <h3>1 in 200</h3>
+          <p>People of Northern European descent have HH</p>
+        </div>
+        <div class="fact-card">
+          <h3>Simple Test</h3>
+          <p>Just a blood test for ferritin and transferrin saturation</p>
+        </div>
+        <div class="fact-card">
+          <h3>Easy Treatment</h3>
+          <p>Regular blood donation keeps iron levels normal</p>
+        </div>
+        <div class="fact-card">
+          <h3>Prevent Damage</h3>
+          <p>Early detection prevents liver, heart, and joint damage</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assessment Quiz -->
+    <section id="quiz" class="quiz-section" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Quick Assessment</h2>
+      <p class="quiz-intro">Answer these questions to see if you might have hemochromatosis. This is not a diagnosis - always consult your doctor.</p>
+      
+      <form id="assessmentForm" class="quiz-form">
+        <div class="question-group">
+          <h3>1. Do you have any of these symptoms?</h3>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="symptoms" value="fatigue">
+              <span class="checkmark"></span>
+              Fatigue or weakness
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="symptoms" value="joint-pain">
+              <span class="checkmark"></span>
+              Joint pain (especially in hands, knees, hips)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="symptoms" value="abdominal-pain">
+              <span class="checkmark"></span>
+              Abdominal pain or discomfort
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="symptoms" value="diabetes">
+              <span class="checkmark"></span>
+              Diabetes or high blood sugar
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="symptoms" value="heart-problems">
+              <span class="checkmark"></span>
+              Heart problems or irregular heartbeat
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="symptoms" value="skin-bronze">
+              <span class="checkmark"></span>
+              Bronze or gray skin color
+            </label>
+          </div>
+        </div>
+
+        <div class="question-group">
+          <h3>2. What's your ancestry?</h3>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="ancestry" value="northern-european" required>
+              <span class="radio-custom"></span>
+              Northern European (Irish, Scottish, English, German, Scandinavian)
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="ancestry" value="other-european">
+              <span class="radio-custom"></span>
+              Other European
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="ancestry" value="other">
+              <span class="radio-custom"></span>
+              Other ancestry
+            </label>
+          </div>
+        </div>
+
+        <div class="question-group">
+          <h3>3. Do you have a family history of:</h3>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="family-history" value="hemochromatosis">
+              <span class="checkmark"></span>
+              Hemochromatosis or iron overload
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="family-history" value="liver-disease">
+              <span class="checkmark"></span>
+              Liver disease or cirrhosis
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="family-history" value="diabetes">
+              <span class="checkmark"></span>
+              Diabetes
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="family-history" value="heart-disease">
+              <span class="checkmark"></span>
+              Heart disease at a young age
+            </label>
+          </div>
+        </div>
+
+        <div class="question-group">
+          <h3>4. What's your age and gender?</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" min="18" max="100" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">Get My Results</button>
+      </form>
+
+      <!-- Results Section (hidden initially) -->
+      <div id="results" class="results-section" style="display: none;">
+        <h3>Your Assessment Results</h3>
+        <div id="resultsContent"></div>
+        <div class="results-actions">
+          <button class="btn-primary" onclick="window.print()">Print Results</button>
+          <a href="help.html" class="btn-primary">Find Testing Locations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testing Information -->
+    <section class="testing-info">
+      <h2>How to Get Tested</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>1. Talk to Your Doctor</h3>
+          <p>Ask for a ferritin test and transferrin saturation test. These are simple blood tests that can detect iron overload.</p>
+        </div>
+        <div class="info-card">
+          <h3>2. Testing Options</h3>
+          <p><strong>Home Testing Kits:</strong> Amazon offers convenient at-home iron deficiency testing kits for quick screening. Easy, private, and accessible.</p>
+          <p><strong>Professional Lab Testing:</strong> Services like HealthyIron provide comprehensive iron panels through certified labs with detailed results.</p>
+          <p><strong>Genetic Testing:</strong> If blood tests suggest HH, genetic testing can confirm the diagnosis and help family members get tested.</p>
+          <a href="#testing-kits" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View Testing Options</a>
+        </div>
+        <div class="info-card">
+          <h3>3. Treatment Options</h3>
+          <p>Blood donation is the standard treatment. It's safe, effective, and helps others.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Testing Kits Section -->
+    <section id="testing-kits" class="redcross-locator-section">
+      <div class="locator-content">
+        <h2>Home Testing Options</h2>
+        <p class="lead">Test your iron levels at home with simple test kits or through professional lab services.</p>
+        
+        <div class="about-grid" style="margin-bottom: 2rem;">
+          <article class="about-card">
+            <h3>Amazon Testing Kits</h3>
+            <p>Quick and easy iron deficiency test kits available for home use with fast results.</p>
+          </article>
+          <article class="about-card">
+            <h3>Professional Labs</h3>
+            <p>Comprehensive iron panels through certified labs with detailed ferritin and transferrin testing.</p>
+          </article>
+          <article class="about-card">
+            <h3>Private & Secure</h3>
+            <p>Private testing with secure results. Share with your doctor or keep for yourself.</p>
+          </article>
+          <article class="about-card">
+            <h3>Affordable Options</h3>
+            <p>Options range from basic screening to comprehensive iron panels at different price points.</p>
+          </article>
+        </div>
+
+        <div class="event-list" style="margin-bottom: 2rem;">
+          <div class="event">
+            <span class="event-title">Iron Deficiency Test Kit (Amazon)</span>
+            <span>Rapid home test for children and adults - Quick results</span>
+          </div>
+          <div class="event">
+            <span class="event-title">Professional Iron Panel</span>
+            <span>Ferritin, transferrin saturation, and TIBC through HealthyIron</span>
+          </div>
+          <div class="event">
+            <span class="event-title">Genetic Testing</span>
+            <span>HFE gene mutation testing for confirmed hemochromatosis diagnosis</span>
+          </div>
+          <div class="event">
+            <span class="event-title">Comprehensive Testing</span>
+            <span>Complete iron analysis with additional health markers</span>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <a href="https://www.amazon.com/Iron-Deficiency-Children-Adults-Rapid/dp/B0DFTDPLFQ" class="btn-primary" style="margin-right: 1rem;">
+            Shop Iron Tests on Amazon
+          </a>
+          <a href="https://healthyiron.com/" class="btn-primary" style="background: rgba(220, 38, 38, 0.1); color: var(--primary-red); border: 2px solid var(--primary-red);">
+            Professional Testing
+          </a>
+        </div>
+
+        <div style="max-width: 600px; margin: 0 auto; text-align: left; background: var(--gray-50); padding: 2rem; border-radius: var(--radius-xl);">
+          <h3 style="text-align: center; margin-bottom: 1rem;">How It Works</h3>
+          <ol style="padding-left: 1.5rem; color: var(--gray-700);">
+            <li style="margin-bottom: 0.5rem;"><strong>Order:</strong> Purchase your testing kit online through Amazon or professional lab services</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Collect:</strong> Use the provided lancet for a simple finger-prick blood sample</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> Send sample back in the prepaid envelope (professional labs) or get instant results (home kits)</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Results:</strong> Receive secure results within minutes to 3-5 business days depending on test type</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Follow-up:</strong> Share results with your doctor for next steps</li>
+          </ol>
+        </div>
+
+        <div style="margin-top: 2rem; padding: 2rem; background: var(--gray-100); border-radius: var(--radius-xl);">
+          <h3 style="text-align: center; margin-bottom: 1rem;">Additional Amazon Testing Options</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <a href="https://www.amazon.com/Iron-Deficiency-Anemia-Highly-Accurate/dp/B0DT8B68VV" class="btn-primary" style="background: #ff9900; color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 8px;">
+              Iron Deficiency Test Kit
+            </a>
+            <a href="https://www.amazon.com/s?k=ferritin+test+kit&ref=nb_sb_noss" class="btn-primary" style="background: #ff9900; color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 8px;">
+              Search Ferritin Tests
+            </a>
+            <a href="https://www.amazon.com/s?k=iron+panel+test+kit&ref=nb_sb_noss" class="btn-primary" style="background: #ff9900; color: white; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 8px;">
+              Iron Panel Tests
+            </a>
+          </div>
+          <p style="text-align: center; margin-top: 1rem; color: var(--gray-600); font-size: 0.9rem;">
+            <em>Note: Always consult with your doctor before using home testing kits and to interpret results properly.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Rewrite the Curse | <a href="#hero-heading">Back to top</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Assessment form handling
+    document.getElementById('assessmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const symptoms = formData.getAll('symptoms');
+      const ancestry = formData.get('ancestry');
+      const familyHistory = formData.getAll('family-history');
+      const age = parseInt(formData.get('age'));
+      const gender = formData.get('gender');
+      
+      // Calculate risk score
+      let riskScore = 0;
+      let riskFactors = [];
+      
+      // Symptoms (2 points each)
+      if (symptoms.length > 0) {
+        riskScore += symptoms.length * 2;
+        riskFactors.push(`${symptoms.length} symptoms reported`);
+      }
+      
+      // Ancestry (3 points for Northern European)
+      if (ancestry === 'northern-european') {
+        riskScore += 3;
+        riskFactors.push('Northern European ancestry');
+      }
+      
+      // Family history (2 points each)
+      if (familyHistory.length > 0) {
+        riskScore += familyHistory.length * 2;
+        riskFactors.push(`${familyHistory.length} family risk factors`);
+      }
+      
+      // Age and gender (males 40+ get 2 points)
+      if (gender === 'male' && age >= 40) {
+        riskScore += 2;
+        riskFactors.push('Male over 40');
+      }
+      
+      // Determine risk level
+      let riskLevel, recommendation;
+      if (riskScore >= 8) {
+        riskLevel = 'High Risk';
+        recommendation = 'We strongly recommend getting tested for hemochromatosis. Contact your doctor about ferritin and transferrin saturation tests.';
+      } else if (riskScore >= 4) {
+        riskLevel = 'Moderate Risk';
+        recommendation = 'Consider getting tested, especially if you have symptoms. Talk to your doctor about screening options.';
+      } else {
+        riskLevel = 'Low Risk';
+        recommendation = 'Your risk appears low, but if you have symptoms or family history, testing may still be beneficial.';
+      }
+      
+      // Display results
+      const resultsDiv = document.getElementById('results');
+      const resultsContent = document.getElementById('resultsContent');
+      
+      resultsContent.innerHTML = `
+        <div class="risk-level ${riskLevel.toLowerCase().replace(' ', '-')}">
+          <h4>Risk Level: ${riskLevel}</h4>
+          <p>Score: ${riskScore}/15</p>
+        </div>
+        <div class="risk-factors">
+          <h4>Risk Factors Identified:</h4>
+          <ul>
+            ${riskFactors.map(factor => `<li>${factor}</li>`).join('')}
+          </ul>
+        </div>
+        <div class="recommendation">
+          <h4>Recommendation:</h4>
+          <p>${recommendation}</p>
+        </div>
+        <div class="disclaimer">
+          <p><strong>Disclaimer:</strong> This assessment is for educational purposes only and is not a medical diagnosis. Always consult with a healthcare professional for proper evaluation and testing.</p>
+        </div>
+      `;
+      
+      resultsDiv.style.display = 'block';
+      resultsDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html> 
